@@ -75,11 +75,11 @@ Reinforcement Learning Strategy
 -------------------------------
 
 ### Epsilon-Greedy Exploration
-
+```
 epsilon = 1.0  
 epsilon_decay = 0.995  
 epsilon_min = 0.05   `
-
+```
 *   High exploration early
     
 *   Gradual decay toward exploitation
@@ -90,9 +90,9 @@ epsilon_min = 0.05   `
 ### Experience Replay
 
 The agent stores episodes as:
-
+```
 [state, action, reward, next_state, game_over]   `
-
+```
 Experience replay:
 
 *   Reduces correlation between samples
@@ -119,9 +119,9 @@ Training includes:
     
 
 Early stopping condition:
-
+```
 if win_rate >= 0.999 and completion_check(model, maze):   `
-
+```
 This ensures the agent can solve the maze from all valid starting cells.
 
 Results
