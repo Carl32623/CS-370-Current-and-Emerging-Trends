@@ -44,28 +44,6 @@ Environment Description
 
 The agent must learn the best path from _any_ free cell.
 
-Neural Network Architecture
-
-This project uses a Deep Q-Network instead of a traditional Q-table.
-
-Model Structure
-model = Sequential()
-model.add(Dense(maze.size, input_shape=(maze.size,)))
-model.add(PReLU())
-model.add(Dense(maze.size))
-model.add(PReLU())
-model.add(Dense(num_actions))
-model.compile(optimizer='adam', loss='mse')
-
-Input: Flattened maze state
-
-Hidden Layers: Dense + PReLU activation
-
-Output: Q-values for 4 possible actions (LEFT, UP, RIGHT, DOWN)
-
-Loss Function: Mean Squared Error
-
-Optimizer: Adam
 
 Architecture
 ------------
