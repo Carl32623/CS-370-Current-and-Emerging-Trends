@@ -31,13 +31,13 @@ The full training process and outputs are available in the exported Jupyter Note
     
 *   Bottom-right cell → treasure
     
- ### The Agent receives:
+ ### The agent receives:
 
-    *   Reward for reaching treasure
+   - Reward for reaching treasure
       
-    *   Penalty for invalid moves
+   - Penalty for invalid moves
         
-    *   Penalty for inefficient movement
+   - Penalty for inefficient movement
     
 
 The agent must learn the best path from _any_ free cell.
