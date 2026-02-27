@@ -51,14 +51,14 @@ Architecture
 This project uses a **Deep Q-Network (DQN)** instead of traditional Q-table learning.
 
 ### Neural Network Structure
-'''
+```
 model = Sequential()  
 model.add(Dense(maze.size,input_shape=(maze.size,)))  
 model.add(PReLU())  
 model.add(Dense(maze.size))  
 model.add(PReLU())  
 model.add(Dense(num_actions))   
-'''
+```
 
 *   Input: Flattened maze state
     
