@@ -52,12 +52,12 @@ This project uses a **Deep Q-Network (DQN)** instead of traditional Q-table lear
 
 ### Neural Network Structure
 
-* model = Sequential()  
-* model.add(Dense(maze.size,input_shape=(maze.size,)))  
-* model.add(PReLU())  
-* model.add(Dense(maze.size))  
-* model.add(PReLU())  
-* model.add(Dense(num_actions))   
+model = Sequential()  
+model.add(Dense(maze.size,input_shape=(maze.size,)))  
+model.add(PReLU())  
+model.add(Dense(maze.size))  
+model.add(PReLU())  
+model.add(Dense(num_actions))   
 
 
 *   Input: Flattened maze state
@@ -88,7 +88,9 @@ Reinforcement Learning Strategy
 
 ### Epsilon-Greedy Exploration
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   epsilon = 1.0  epsilon_decay = 0.995  epsilon_min = 0.05   `
+epsilon = 1.0  
+epsilon_decay = 0.995  
+epsilon_min = 0.05   `
 
 *   High exploration early
     
@@ -101,7 +103,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 The agent stores episodes as:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   [state, action, reward, next_state, game_over]   `
+[state, action, reward, next_state, game_over]   `
 
 Experience replay:
 
@@ -130,7 +132,7 @@ Training includes:
 
 Early stopping condition:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   if win_rate >= 0.999 and completion_check(model, maze):   `
+if win_rate >= 0.999 and completion_check(model, maze):   `
 
 This ensures the agent can solve the maze from all valid starting cells.
 
