@@ -22,25 +22,25 @@ Instead of hardcoding logic, the agent learns optimal behavior through:
 
 The full training process and outputs are available in the exported Jupyter Notebook:
 
-Environment Description
+## Environment Description
 -----------------------
 
 *   8×8 maze grid
     
-*   ```1.0 ```→ walkable path
+*   `1.0 `→ walkable path
     
-*   ```0.0``` → wall
+*   `0.0` → wall
     
 *   Bottom-right cell → treasure
     
-  The Agent receives:
-    
+ ### The Agent receives:
+
     *   Reward for reaching treasure
-        
+      
     *   Penalty for invalid moves
         
     *   Penalty for inefficient movement
-        
+    
 
 The agent must learn the best path from _any_ free cell.
 
