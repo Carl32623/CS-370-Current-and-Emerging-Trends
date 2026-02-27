@@ -1,7 +1,6 @@
 # CS-370-Current-and-Emerging-Trends
 
-Overview
---------
+## Overview
 
 This project implements a **Deep Q-Learning (DQN)** agent that learns to solve a maze-based Treasure Hunt game using reinforcement learning.
 
@@ -23,7 +22,6 @@ Instead of hardcoding logic, the agent learns optimal behavior through:
 The full training process and outputs are available in the exported Jupyter Notebook:
 
 ## Environment Description
------------------------
 
 *   8×8 maze grid
     
