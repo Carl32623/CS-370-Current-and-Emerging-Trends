@@ -70,18 +70,6 @@ model.add(Dense(num_actions))
     
 *   Optimizer: Adam
     
-*   Reinforcement Learning Strategy
-    
-*   Epsilon-Greedy Exploration
-    
-*   epsilon = 1.0epsilon\_decay = 0.995epsilon\_min = 0.05
-    
-*   High exploration early
-    
-*   Gradual decay toward exploitation
-    
-*   Minimum epsilon prevents total greediness
-    
 
 Reinforcement Learning Strategy
 -------------------------------
