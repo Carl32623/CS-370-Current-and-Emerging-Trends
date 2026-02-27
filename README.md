@@ -27,13 +27,13 @@ Environment Description
 
 *   8×8 maze grid
     
-*   1.0 → walkable path
+*   ```1.0 ```→ walkable path
     
-*   0.0 → wall
+*   ```0.0``` → wall
     
 *   Bottom-right cell → treasure
     
-*   Agent receives:
+  The Agent receives:
     
     *   Reward for reaching treasure
         
