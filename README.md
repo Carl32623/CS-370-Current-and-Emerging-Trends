@@ -44,6 +44,29 @@ Environment Description
 
 The agent must learn the best path from _any_ free cell.
 
+Neural Network Architecture
+
+This project uses a Deep Q-Network instead of a traditional Q-table.
+
+Model Structure
+model = Sequential()
+model.add(Dense(maze.size, input_shape=(maze.size,)))
+model.add(PReLU())
+model.add(Dense(maze.size))
+model.add(PReLU())
+model.add(Dense(num_actions))
+model.compile(optimizer='adam', loss='mse')
+
+Input: Flattened maze state
+
+Hidden Layers: Dense + PReLU activation
+
+Output: Q-values for 4 possible actions (LEFT, UP, RIGHT, DOWN)
+
+Loss Function: Mean Squared Error
+
+Optimizer: Adam
+
 Architecture
 ------------
 
@@ -71,7 +94,7 @@ This project uses a **Deep Q-Network (DQN)** instead of traditional Q-table lear
     
 *   Reinforcement Learning Strategy
     
-*   1️⃣ Epsilon-Greedy Exploration
+*   Epsilon-Greedy Exploration
     
 *   epsilon = 1.0epsilon\_decay = 0.995epsilon\_min = 0.05
     
