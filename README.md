@@ -43,8 +43,7 @@ The full training process and outputs are available in the exported Jupyter Note
 The agent must learn the best path from _any_ free cell.
 
 
-Architecture
-------------
+## Architecture
 
 This project uses a **Deep Q-Network (DQN)** instead of traditional Q-table learning.
 
@@ -69,8 +68,7 @@ model.add(Dense(num_actions))
 *   Optimizer: Adam
     
 
-Reinforcement Learning Strategy
--------------------------------
+## Reinforcement Learning Strategy
 
 ### Epsilon-Greedy Exploration
 ```
@@ -100,8 +98,7 @@ Experience replay:
 *   Allows batch training
     
 
-Training Loop
--------------
+## Training Loop
 
 Training includes:
 
@@ -116,14 +113,13 @@ Training includes:
 *   Early stopping when 100% completion achieved
     
 
-Early stopping condition:
+### Early stopping condition:
 ```
 if win_rate >= 0.999 and completion_check(model, maze):   `
 ```
 This ensures the agent can solve the maze from all valid starting cells.
 
-Results
--------
+## Results
 
 During training:
 
@@ -145,8 +141,7 @@ After convergence:
 *   Agent reliably reaches treasure
     
 
-Technologies Used
------------------
+## Technologies Used
 
 *   Python
     
@@ -161,8 +156,7 @@ Technologies Used
 *   Custom Environment (TreasureMaze)
     
 
-Possible Improvements
----------------------
+## Possible Improvements
 
 Future enhancements could include:
 
